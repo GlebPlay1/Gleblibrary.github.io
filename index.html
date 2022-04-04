@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Библиотека</title>
+    <meta name="description" content="Главная страница при входе на сайт">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+        <ul class="m-menu">
+            <li class="close-menu"><a href="#">&times;</a></li>
+            <li class="menu-link-3"><a href="news.html">Новости</a></li>
+            <li class="menu-link-3"><a href="book.html">Книги</a></li>
+            <li class="menu-link-3"><a href="#">Услуги</a></li>
+            <li class="menu-link-3"><a href="#">О нас</a></li>
+        </ul>
 <div class="header-fon">
     <header class="header">
     <ul class="menu">
         <li class="menu-link-1"><a href="index.html">
             Читай вместе с нами</a></li>
         <li class="menu-link-2"><a href="news.html" class="menu-link">Новости</a></li>
-        <li class="menu-link-2"><a href="#" class="menu-link">Книги</a></li>
+        <li class="menu-link-2"><a href="book.html" class="menu-link">Книги</a></li>
         <li class="menu-link-2"><a href="#" class="menu-link">Услуги</a></li>
         <li class="menu-link-2"><a href="#" class="menu-link">О нас</a></li>
         <li class="icon"><div class="bars"><a href="#" class="fa fa-bars fa-lg">
@@ -35,7 +43,7 @@
         </div>
         <div class="main-2">
         <div class="main-2-1">
-            <img class="image2" src="img/1341-1549299387-big.jpg">
+            <a href="book0001.html"><img class="image2" src="img/1341-1549299387-big.jpg"></a>
             <span class="span3">Заговор корпорации "Umbrella"</span>
             <span class="span4">Перри С.</span>
             <input class="but" type="button" value="Арендовать">
@@ -136,20 +144,50 @@
             </div>
             </div>
         </div>
+        <div class="main4">
+            <h2>Руководство</h2>
+            <div class="main4-1">
+            <div class="main4-2">
+                <div><img src="img/user.png"></div>
+                <div class="main4-2-2"><span>Глеб Костылев</span>
+                <span>генеральный директор</span>
+                <span>8(900) 555 35-35</span></div>
+            </div>
+            <div class="main4-2">
+                <div><img src="img/user.png"></div>
+                <div class="main4-2-2"><span>Васитов Радмир</span>
+                <span>Руководитель отдела маркетинга</span>
+                <span>8(900) 555 35-35</span></div>
+            </div>
+            <div class="main4-2">
+                <div><img src="img/user.png"></div>
+                <div class="main4-2-2"><span>Денис Аптуков</span>
+                <span>Руководитель отдела </span>
+                <span>8(900) 555 35-35</span></div>
+            </div>
+            <div class="main4-2">
+                <div><img src="img/user.png"></div>
+                <div class="main4-2-2"><span>Георгий Верхоломов</span>
+                <span>Руководитель отдела</span>
+                <span>8(900) 555 35-35</span></div>
+            </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="foot-fon">
         <div class="foot">
             <div class="foot1">
+                <p><a href="news.html">Новости</a></p>
                 <p><a href="#">Книги</a></p>
                 <p><a href="#">Услуги</a></p>
                 <p><a href="#">О нас</a></p>
             </div>
             <div class="foot2">
                 <p>Мы в социальных сетях</p>
-                <div><img src="img/inst.png">
-                <img src="img/vk_101783.png">
-                <img src="img/youtube.png"></div>
+                <a href="https://web.telegram.org"><div><img src="img/telegram.png"></a>
+                <a href="https://vk.com/"><img src="img/vk_101783.png"></a>
+                <a href="https://www.youtube.com/"><img src="img/youtube.png"></div></a>
             </div>
             <div class="foot3">
                 <p>Контакты</p>
@@ -159,5 +197,23 @@
         </div>
         </div>
     </footer>
+
+<!--Функция бургера-->
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function() {
+            var link = $('.bars');
+            var close = $('.close-menu');
+            var menu = $('.m-menu');
+            link.on('click', function(event) {
+                event.preventDefault();
+                menu.toggleClass('m-menu__active')
+            });
+            close.on('click', function(event) {
+                event.preventDefault();
+                menu.toggleClass('m-menu__active')
+            });
+        });
+    </script>
 </body>
 </html>

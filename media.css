@@ -26,6 +26,22 @@
     #main-2-1 {
         display: none;
     }
+    .main4 {
+        width: 82%;
+    }
+    .main4-1 {
+        flex-wrap: wrap;
+    }
+    .main4-1 div {
+        width: 40%;
+        height: 40%;
+    }
+    .main4-2 {
+        margin-top: 20px;
+    }
+    .news {
+        width: 82%;
+    }
     .foot1 {
         display: none;
     }
@@ -63,6 +79,21 @@
     }
     .menu-link-1 {
         width: 25%;
+    }
+    .main4-1 {
+        flex-direction: column;
+    }
+    .main4-1 div {
+        width: 45%;
+        height: none;
+    }
+    .main-news-1-1 {
+        flex-direction: column;
+    }
+    .main-news-1-1 span{
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
     }
     .foot {
         display: block;
